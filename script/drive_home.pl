@@ -7,7 +7,7 @@ use CraigHome;
 use Data::Dumper::Concise;
 use CGI qw(start_html end_html);
 
-my $db             = KiokuDB->connect( "dbi:SQLite:dbname=/home/hunter/homes/craighomes.db", );
+my $db             = KiokuDB->connect( "dbi:SQLite:dbname=db/craighomes.db", );
 my $scope_object   = $db->new_scope;
 my $search_results = $db->search( { search_name => 'montana_cabin_by_owner' } );
 

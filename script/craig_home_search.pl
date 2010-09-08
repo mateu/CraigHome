@@ -44,7 +44,7 @@ my %search_definitions = (
 
 # Connect to Kioku Data Store, nominate columns for searching and create the scope object.
 my $db = KiokuDB->connect(
-    "dbi:SQLite:dbname=/home/hunter/homes/craighomes.db",
+    "dbi:SQLite:dbname=db/craighomes.db",
     create  => 1,
     columns => [
         search_name => {
