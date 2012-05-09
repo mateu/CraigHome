@@ -39,7 +39,14 @@ my %search_definitions = (
         keywords    => [qw/ radiant heat /],
         max_price   => 275000,
         min_price   => 1,
-    }
+    },
+    0 => {
+        search_name => 'missoula_sienna',
+        search_URIs => ['http://missoula.craigslist.org/cto/'],
+        keywords    => [qw/ sienna /],
+        max_price   => 16000,
+        min_price   => 1,
+    },
 );
 
 # Connect to Kioku Data Store, nominate columns for searching and create the scope object.
